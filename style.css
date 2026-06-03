@@ -962,12 +962,43 @@ img {
   justify-content: center;
 }
 
-.service-panel-img {
+.service-panel-card {
   width: 100%;
   max-width: 450px;
   border-radius: 8px;
+  overflow: hidden;
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-premium);
+  background-color: var(--white);
+}
+
+.service-panel-img {
+  width: 100%;
+  display: block;
+}
+
+/* Brand footer matching the header logo layout */
+.service-panel-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 20px 28px;
+  background-color: var(--bg-base);
+  border-top: 1px solid var(--border-color);
+}
+
+.service-panel-brand .logo-container {
+  justify-content: center;
+}
+
+.service-panel-tagline {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
 }
 
 /* Staffing sub-grid */
